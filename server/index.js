@@ -8,7 +8,8 @@ const userModel = require("./userModel");
 app.use(express.json());
 app.use(cors({
   origin:["https://mern-redux-crud-client.vercel.app/create"],
-  method:["POST","GET","PUT","DELETE"]
+  method:["POST","GET","PUT","DELETE"],
+  credentials:true
   ));
 mongoose.connect("mongodb://localhost:27017/reduxcrud");
 
