@@ -7,7 +7,7 @@ const userModel = require("./userModel");
 
 app.use(express.json());
 app.use(cors({
-  origin:["https://mern-redux-crud-client.vercel.app/create"],
+  origin:["https://mern-redux-crud-client.vercel.app"],
   method:["POST","GET","PUT","DELETE"],
   credentials:true
   ));
