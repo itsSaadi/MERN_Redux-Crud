@@ -10,6 +10,7 @@ export default function CreateUsers() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
+  axios.defaults.withCredentials=true;
 
 
   const navigate = useNavigate();
