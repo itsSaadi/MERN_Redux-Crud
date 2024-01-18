@@ -6,7 +6,10 @@ const mongoose = require("mongoose");
 const userModel = require("./userModel");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin:["https://mern-redux-crud-client.vercel.app/create"],
+  method:["POST","GET","PUT","DELETE"]
+  ));
 mongoose.connect("mongodb://localhost:27017/reduxcrud");
 
 app.get("/", (req, res) => {
