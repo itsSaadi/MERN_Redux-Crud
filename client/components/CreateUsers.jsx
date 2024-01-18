@@ -15,7 +15,7 @@ export default function CreateUsers() {
   const navigate = useNavigate();
   const handleCreate = async (e) => {
     e.preventDefault();
-    const response = await axios.post("http://localhost:3000/create", {
+    const response = await axios.post("https://mern-redux-crud-api.vercel.app/create", {
       name,
       email,
       contact,
